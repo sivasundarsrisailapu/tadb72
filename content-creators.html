@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Creators - TADB</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="content-creators-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <button class="back-toggle" onclick="history.back()">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+            </div>
+
+            <div class="nav-center">
+                <a href="index.html" class="logo">TADB</a>
+            </div>
+
+            <div class="nav-right">
+                <button class="search-toggle" id="searchToggle">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Search Box -->
+        <div class="search-box" id="searchBox">
+            <div class="search-container">
+                <input type="text" placeholder="Search creators..." class="search-input">
+                <i class="fas fa-search search-icon"></i>
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Creators Hero Section -->
+    <section class="creators-hero">
+        
+        
+        <div class="creators-container">
+            <div class="text-hero-content">
+                
+                
+                <div class="main-title-section">
+                    <h1 class="large-title">
+                        <span class="title-word">CONTENT</span>
+                        <span class="title-word highlight">CREATORS</span>
+                    </h1>
+                    <div class="title-underline"></div>
+                </div>
+                
+                
+                
+                <div class="action-section">
+                    <button class="text-cta-primary" onclick="document.querySelector('.creators-section').scrollIntoView({behavior: 'smooth'})">
+                        EXPLORE CREATORS
+                    </button>
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <! -- Creators Section -->
+        <section class="creators-section">
+
+
+
+            
+
+            
+
+
+            
+
+
+
+
+            <div class="creators-container">
+                <!-- Creator Switch Navigation -->
+                <div class="creator-navigation">
+                    <button class="nav-arrow nav-arrow-left" id="prevCreator">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+
+                    <div class="creator-switches">
+                        <button class="creator-switch-btn active" data-target="creator-1">TADB</button>
+                        <button class="creator-switch-btn" data-target="creator-2">Telchi Anime</button>
+                        <button class="creator-switch-btn" data-target="creator-3">Professor</button>
+                        <button class="creator-switch-btn" data-target="creator-4">Rae</button>
+                    </div>
+
+                    <button class="nav-arrow nav-arrow-right" id="nextCreator">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Creator Details Panel -->
+                <div class="creator-details-panel">
+                    <!-- TADB -->
+                    <div class="creator-profile active" id="creator-1">
+                        <div class="creator-card">
+                            <div class="creator-image-container">
+                                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjMyJdgsufmZrNxfCdxv9X87MdndtuZP1mSaXtiRxeTUVEYKWRzMn6y1ZnrrZ2SEDuyidYa2M4RvY0uAi0KrP-evLJYsv0_YbGAXz3sT1DafCucVsYIq8BNk_9MNeRmvD6nIsFGKNbHISTfX0h4iqR0AecbKy8vl7WR5Y-kJT5-9PjbHTTL5wKIV495Jc8=s16000"
+                                    alt="TADB" class="creator-image">
+                                <div class="creator-badge">
+                                    <span class="badge-text">FOUNDER</span>
+                                </div>
+                            </div>
+                            <div class="creator-info">
+                                <h2 class="creator-name">TADB</h2>
+                                <p class="creator-description">Telugu Anime Database - Your ultimate destination for
+                                    Telugu dubbed anime content</p>
+                                <div class="creator-social">
+                                    <a href="https://www.instagram.com/teluguanime.db/" target="_blank"
+                                        class="social-link instagram">
+                                        <i class="fab fa-instagram"></i>
+                                        <span>Instagram</span>
+                                    </a>
+                                    <a href="https://www.youtube.com/@Mugentales" target="_blank"
+                                        class="social-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        <span>YouTube</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Telchi Anime -->
+                    <div class="creator-profile" id="creator-2">
+                        <div class="creator-card">
+                            <div class="creator-image-container">
+                                <img src="https://i.pinimg.com/736x/b5/7b/be/b57bbe9a012d059160ec0aceff2df802.jpg"
+                                    alt="Telchi Anime" class="creator-image">
+                                <div class="creator-badge">
+                                    <span class="badge-text">CREATOR</span>
+                                </div>
+                            </div>
+                            <div class="creator-info">
+                                <h2 class="creator-name">Telchi Anime</h2>
+                                <p class="creator-description">Content Creator specializing in Telugu anime reviews and
+                                    recommendations</p>
+                                <div class="creator-social">
+                                    <a href="https://www.instagram.com/telchianime/" target="_blank"
+                                        class="social-link instagram">
+                                        <i class="fab fa-instagram"></i>
+                                        <span>Instagram</span>
+                                    </a>
+                                    <a href="https://www.youtube.com/@TelchiAnimeofficial" target="_blank"
+                                        class="social-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        <span>YouTube</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Professor -->
+                    <div class="creator-profile" id="creator-3">
+                        <div class="creator-card">
+                            <div class="creator-image-container">
+                                <img src="https://i.pinimg.com/736x/5c/7e/d8/5c7ed813dbdb2ec4a76e96e407a7e6c7.jpg"
+                                    alt="Professor" class="creator-image">
+                                <div class="creator-badge">
+                                    <span class="badge-text">EDITOR</span>
+                                </div>
+                            </div>
+                            <div class="creator-info">
+                                <h2 class="creator-name">Professor</h2>
+                                <p class="creator-description">TADB Editor specializing in anime content editing and
+                                    production</p>
+                                <div class="creator-social">
+                                    <a href="https://instagram.com/" target="_blank" class="social-link instagram">
+                                        <i class="fab fa-instagram"></i>
+                                        <span>Instagram</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rae -->
+                    <div class="creator-profile" id="creator-4">
+                        <div class="creator-card">
+                            <div class="creator-image-container">
+                                <img src="https://i.pinimg.com/736x/b8/41/a3/b841a3b8c2e8eb4adce66e3de22f4a2e.jpg"
+                                    alt="Rae" class="creator-image">
+                                <div class="creator-badge">
+                                    <span class="badge-text">RECOMMENDER</span>
+                                </div>
+                            </div>
+                            <div class="creator-info">
+                                <h2 class="creator-name">Rae</h2>
+                                <p class="creator-description">Anime Recommender providing curated anime suggestions for
+                                    Telugu audience</p>
+                                <div class="creator-social">
+                                    <a href="https://instagram.com/" target="_blank" class="social-link instagram">
+                                        <i class="fab fa-instagram"></i>
+                                        <span>Instagram</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Suggested Anime Section -->
+        <section class="suggested-anime-section">
+            <div class="creators-container">
+                <div class="section-header">
+                    <h2 class="section-title">Suggested Anime</h2>
+                    <p class="section-subtitle">Recommended anime from our creators</p>
+                </div>
+                <div class="anime-grid">
+                    <div class="anime-card-box">
+                        <div class="anime-image-left">
+                            <img src="https://u.livechart.me/anime_visuals/local_version/10337/image/a4be70dfa4ae919f0c2470e1bbffb0b8.webp/large.jpg"
+                                alt="DanDaDan" class="anime-poster">
+                        </div>
+                        <div class="anime-details-right">
+                            <h3 class="anime-name">DanDaDan</h3>
+                            <p class="anime-platform">Crunchyroll</p>
+                            <div class="anime-meta">
+                                <div class="anime-rating-box">
+                                    <i class="fas fa-star"></i>
+                                    <span>8.3 (IMDb)</span>
+                                </div>
+                                <span class="anime-episodes">24 Episodes</span>
+                                <span class="anime-genre-tag">Action</span>
+                                <span class="anime-genre-tag">Comedy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="anime-card-box">
+                        <div class="anime-image-left">
+                            <img src="https://u.livechart.me/anime/visual/6875/image/00524cc5d2d7dd8506da05bd4d10d38e.jfif/large.jpg"
+                                alt="Spy x Family" class="anime-poster">
+                        </div>
+                        <div class="anime-details-right">
+                            <h3 class="anime-name">SPY x FAMILY</h3>
+                            <p class="anime-platform">Crunchyroll</p>
+                            <div class="anime-meta">
+                                <div class="anime-rating-box">
+                                    <i class="fas fa-star"></i>
+                                    <span>8.8 (IMDb)</span>
+                                </div>
+                                <span class="anime-episodes">25 Episodes</span>
+                                <span class="anime-genre-tag">Action</span>
+                                <span class="anime-genre-tag">Comedy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="anime-card-box">
+                        <div class="anime-image-left">
+                            <img src="https://u.livechart.me/anime/visual/6884/image/7963459087c881bb8db7eb20830a4ef8.png/large.jpg"
+                                alt="Black Butler" class="anime-poster">
+                        </div>
+                        <div class="anime-details-right">
+                            <h3 class="anime-name">Black Butler Public School</h3>
+                            <p class="anime-platform">Crunchyroll</p>
+                            <div class="anime-meta">
+                                <div class="anime-rating-box">
+                                    <i class="fas fa-star"></i>
+                                    <span>8.2 (IMDb)</span>
+                                </div>
+                                <span class="anime-episodes">36 Episodes</span>
+                                <span class="anime-genre-tag">Mystery</span>
+                                <span class="anime-genre-tag">Supernatural</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="anime-card-box">
+                        <div class="anime-image-left">
+                            <img src="https://u.livechart.me/anime_visuals/local_version/14169/image/1c76fdcf1cdd76892b407e54f7fdb542.webp/large.jpg"
+                                alt="Gachiakuta" class="anime-poster">
+                        </div>
+                        <div class="anime-details-right">
+                            <h3 class="anime-name">Gachiakuta</h3>
+                            <p class="anime-platform">Crunchyroll</p>
+                            <div class="anime-meta">
+                                <div class="anime-rating-box">
+                                    <i class="fas fa-star"></i>
+                                    <span>8.1 (IMDb)</span>
+                                </div>
+                                <span class="anime-episodes">12 Episodes</span>
+                                <span class="anime-genre-tag">Adventure</span>
+                                <span class="anime-genre-tag">Comedy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="anime-card-box">
+                        <div class="anime-image-left">
+                            <img src="https://u.livechart.me/anime_visuals/local_version/2981/image/80070608f5d264e77b0bb4f1fe24096b.webp/large.jpg"
+                                alt="Vinland Saga" class="anime-poster">
+                        </div>
+                        <div class="anime-details-right">
+                            <h3 class="anime-name">Vinland Saga</h3>
+                            <p class="anime-platform">Crunchyroll</p>
+                            <div class="anime-meta">
+                                <div class="anime-rating-box">
+                                    <i class="fas fa-star"></i>
+                                    <span>8.9 (IMDb)</span>
+                                </div>
+                                <span class="anime-episodes">24 Episodes</span>
+                                <span class="anime-genre-tag">Action</span>
+                                <span class="anime-genre-tag">Historical</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="anime-card-box">
+                        <div class="anime-image-left">
+                            <img src="https://u.livechart.me/anime_visuals/local_version/213/image/da11f281fa013322c52cf32ae7663437.jpeg/large.jpg"
+                                alt="Ranking of Kings" class="anime-poster">
+                        </div>
+                        <div class="anime-details-right">
+                            <h3 class="anime-name">Ranking of Kings</h3>
+                            <p class="anime-platform">Crunchyroll</p>
+                            <div class="anime-meta">
+                                <div class="anime-rating-box">
+                                    <i class="fas fa-star"></i>
+                                    <span>8.7 (IMDb)</span>
+                                </div>
+                                <span class="anime-episodes">23 Episodes</span>
+                                <span class="anime-genre-tag">Fantasy</span>
+                                <span class="anime-genre-tag">Adventure</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!- - YouTube Videos Section -->
+            <section class="youtube-section">
+                <div class="creators-container">
+                    <div class="section-header">
+                        <h2 class="section-title">Latest Videos</h2>
+                        <p class="section-subtitle">Recent content from our creators</p>
+                    </div>
+                    <div class="videos-grid" id="videosGrid">
+                        <!-- Videos will be loaded dynamically -->
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+                                    allowfullscreen></iframe>
+                                <div class="video-duration">10:25</div>
+                            </div>
+                            <div class="video-info">
+                                <h3 class="video-title">Latest Telugu Anime Updates</h3>
+                                <p class="video-channel">TADB Team</p>
+                                <p class="video-views">1.2K views • 2 days ago</p>
+                            </div>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+                                    allowfullscreen></iframe>
+                                <div class="video-duration">15:30</div>
+                            </div>
+                            <div class="video-info">
+                                <h3 class="video-title">Voice Acting Behind the Scenes</h3>
+                                <p class="video-channel">Voice Artists</p>
+                                <p class="video-views">2.5K views • 5 days ago</p>
+                            </div>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+                                    allowfullscreen></iframe>
+                                <div class="video-duration">8:45</div>
+                            </div>
+                            <div class="video-info">
+                                <h3 class="video-title">Editing Process Explained</h3>
+                                <p class="video-channel">Editors Team</p>
+                                <p class="video-views">890 views • 1 week ago</p>
+                            </div>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+                                    allowfullscreen></iframe>
+                                <div class="video-duration">12:15</div>
+                            </div>
+                            <div class="video-info">
+                                <h3 class="video-title">Anime Review: Naruto Telugu Dub</h3>
+                                <p class="video-channel">TADB Team</p>
+                                <p class="video-views">3.1K views • 3 days ago</p>
+                            </div>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+                                    allowfullscreen></iframe>
+                                <div class="video-duration">20:10</div>
+                            </div>
+                            <div class="video-info">
+                                <h3 class="video-title">Character Voice Comparison</h3>
+                                <p class="video-channel">Voice Artists</p>
+                                <p class="video-views">1.8K views • 1 week ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="disclaimer-section">
+                    <h4>Disclaimer</h4>
+                    <p>TADB is a fan-made database for Telugu anime content and content creators. All anime titles,
+                        images, and
+                        related content are the property of their respective owners and studios. This website is for
+                        informational and entertainment purposes only.</p>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 TADB - Telugu Anime Database. All rights reserved. | Made with ❤️ for Telugu Anime
+                        Fans</p>
+                </div>
+            </footer>
+
+            <script src="theme-manager.js"></script>
+            <script src="content-creators-script.js"></script>
+</body>
+
+</html>
